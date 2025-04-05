@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "buildCommand": "npm run build",
+    "regions": ["syd1"],
+    "crons": [
+      {
+        "path": "/api/cron/monthly-report",
+        "schedule": "0 0 1 * *"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/home",
+        "destination": "/dashboard",
+        "permanent": true
+      }
+    ]
+  }
