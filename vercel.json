@@ -1,18 +1,23 @@
 {
-    "version": 2,
-    "buildCommand": "npm run build",
-    "regions": ["syd1"],
-    "crons": [
-      {
-        "path": "/api/cron/monthly-report",
-        "schedule": "0 0 1 * *"
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/home",
-        "destination": "/dashboard",
-        "permanent": true
-      }
-    ]
-  }
+  "version": 2,
+  "buildCommand": "npm run build",
+  "regions": ["syd1"],
+  "env": {
+    "DATABASE_URL": "database.com",
+    "API_KEY": "apikey123214123",
+    "NODE_ENV": "production"
+  },
+  "crons": [
+    {
+      "path": "/api/cron/monthly-report", 
+      "schedule": "0 0 1 *"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/dashboard", 
+      "permanent": true
+    }
+  ]
+}
