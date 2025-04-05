@@ -1,4 +1,3 @@
-// File: src/app/api/maintenance/urgent/route.js
 export const runtime = 'edge';
 
 export async function POST(request) {

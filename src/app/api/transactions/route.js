@@ -1,5 +1,3 @@
-// File: src/app/api/transactions/route.js
-
 export async function POST(req) {
   try {
     // Process the form data from the request body
@@ -46,3 +44,4 @@ export async function GET(req) {
   // In a real application, you might display search results directly
   return Response.redirect(new URL(`/financial?success=true&status=200&fund=${fund || ''}&type=${type || ''}`, req.url), 303);
 }
+
