@@ -2,6 +2,17 @@
   "version": 2,
   "buildCommand": "npm run build",
   "regions": ["syd1"],
+  "functions": {
+    "api/php/**/*.php": {
+      "runtime": "vercel-php@0.6.0"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/php/(.*)",
+      "dest": "/api/php/$1"
+    }
+  ],
   "env": {
     "DATABASE_URL": "database.com",
     "API_KEY": "apikey123214123",

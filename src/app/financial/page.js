@@ -7,7 +7,6 @@ import {
   FileText, 
   Users, 
   LogOut,
-  DollarSign,
   Building,
   AlertCircle,
   Calendar,
